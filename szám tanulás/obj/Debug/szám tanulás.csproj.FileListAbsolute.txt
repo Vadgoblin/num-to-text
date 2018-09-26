@@ -1,0 +1,7 @@
+F:\programozás\c#\szám tanulás\szám tanulás\bin\Debug\szám tanulás.exe.config
+F:\programozás\c#\szám tanulás\szám tanulás\bin\Debug\szám tanulás.exe
+F:\programozás\c#\szám tanulás\szám tanulás\bin\Debug\szám tanulás.pdb
+F:\programozás\c#\szám tanulás\szám tanulás\obj\Debug\szám tanulás.csprojAssemblyReference.cache
+F:\programozás\c#\szám tanulás\szám tanulás\obj\Debug\szám tanulás.csproj.CoreCompileInputs.cache
+F:\programozás\c#\szám tanulás\szám tanulás\obj\Debug\szám tanulás.exe
+F:\programozás\c#\szám tanulás\szám tanulás\obj\Debug\szám tanulás.pdb
