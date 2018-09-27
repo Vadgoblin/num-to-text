@@ -31,6 +31,7 @@ namespace szám_tanulás
             }*/
             Console.WriteLine(get_string(222));
             Console.WriteLine(get_string(12));
+            Console.WriteLine(get_string(34));
             Console.ReadLine();
         }
         static string get_string(int num)
@@ -174,13 +175,72 @@ namespace szám_tanulás
                 }
                 else // szám nagyobb vagy egyenéő mint húsz
                 {
+                    bool need_und = num.ToString()[num.ToString().Length - 2] != '0' && num.ToString()[num.ToString().Length - 1] != '0';
+                    if (num.ToString()[num.ToString().Length - 1] != '0')
+                    {
+                        switch (Convert.ToInt32(num.ToString()[num.ToString().Length - 1]+""))
+                        {
+                            case 1:
+                                correct += "eins";
+                                break;
+                            case 2:
+                                correct += "zwei";
+                                break;
+                            case 3:
+                                correct += "drei";
+                                break;
+                            case 4:
+                                correct += "vier";
+                                break;
+
+                            case 5:
+                                correct += "fünf";
+                                break;
+                            case 6:
+                                correct += "sechs";
+                                break;
+                            case 7:
+                                correct += "sieben";
+                                break;
+                            case 8:
+                                correct += "acht";
+                                break;
+                            case 9:
+                                correct += "neun";
+                                break;
+                        }
+                    }
                     if (num.ToString()[num.ToString().Length - 2] != '0')
                     {
+                        if (need_und) correct += "und";
+                        switch (Convert.ToInt32(num.ToString()[num.ToString().Length - 2] + ""))
+                        {
+                            case 2:
+                                correct += "zwanzig";
+                                break;
+                            case 3:
+                                correct += "dreißig";//le lesz majd cserélve 'ss'-re
+                                break;
+                            case 4:
+                                correct += "vierzig";
+                                break;
 
-                    }
-                    if (num.ToString()[num.ToString().Length - 1] == '0')
-                    {
-
+                            case 5:
+                                correct += "fünfzig";
+                                break;
+                            case 6:
+                                correct += "sechzig";
+                                break;
+                            case 7:
+                                correct += "sieben";
+                                break;
+                            case 8:
+                                correct += "achtzig";
+                                break;
+                            case 9:
+                                correct += "neunzig";
+                                break;
+                        }
                     }
                 }
             }
